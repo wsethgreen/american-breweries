@@ -1,0 +1,510 @@
+
+* {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #f2f3f4;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: #2f1108;
+    border-bottom: 2px solid #ab804f;
+}
+
+.header__logo {
+    height: 50px;
+    width: 75px;
+}
+
+.header__link {
+    background-color: #2f1108;
+    color: #ab804f;
+    padding: 10px;
+    margin: auto 5px auto 5px;
+    font-size: 1.1em;
+}
+
+.header__link:hover {
+    color: #863309;
+    transition: all 0.3s;
+}
+
+.header__title {
+    background-color: #2f1108;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    font-size: 1.3em;
+    color: #ab804f;
+}
+
+html {
+    background: url("/static/images/beer-bg.jpg");
+    background-position: center center; 
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.content__container {
+    flex: 1 0 auto;
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 90%;
+    margin: 30px auto 30px auto;
+}
+
+.intro__blurb {
+    background-color: rgba(0, 0, 0, .75);
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.open__brewery__link {
+    font-size: inherit;
+    color: #ab804f;
+}
+
+.open__brewery__link:hover {
+    color: #863309;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.intro__emphasize {
+    font-size: inherit;
+    color: #ab804f;
+}
+
+.intro__close {
+    background-color: rgba(0, 0, 0, .75);
+    color: #ab804f;
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px;
+    margin: 10px auto 10px auto;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.brew_map__container {
+    margin: 30px 0 30px 0;
+    width: 90%;
+}
+
+#igraph {
+    height: 500px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#db8153e1-81ee-4ee9-8ac7-439f17067f6c {
+    margin: 0 auto 0 auto;
+}
+
+.plotly-graph-div.js-plotly-plot {
+    margin: 0 auto 0 auto;
+}
+
+.search__container {
+    margin: 30px auto 30px auto;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.search__input {
+    background-color: #f2f3f4;
+    color: #2f1108;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto 0 auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.search__button {
+    margin: 30px auto 0 auto;
+    height: 30px;
+    width: 60%;
+    border: 2px solid #ab804f;
+    background-color: #2f1108;
+    border-radius: 5px;
+}
+
+.search__button:hover {
+    color: #ab804f;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.results__container {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 30px auto;
+    color: transparent;
+}
+
+.results__header {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.search__result {
+    margin: 15px auto 15px auto;
+    width: 350px;
+    color: transparent;
+}
+
+#text {
+    display: none;
+}
+
+.brew__name {
+    background-color: #2f1108;
+    border-top: 2px solid #ab804f;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
+    border-radius: 5px 5px 0 0;
+    color: #ab804f;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.brew__address, .brew__phone {
+    padding: 10px;
+    background-color: #2f1108;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
+}
+
+.brew__url__container {
+    border-radius: 0 0 5px 5px;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
+    border-bottom: 2px solid #ab804f;
+    padding: 10px;
+    background-color: #2f1108;
+}
+
+.brew__url {
+    background-color: #2f1108;
+}
+
+.brew__url:hover {
+    color: #ab804f;
+    transition: all 0.3s;
+}
+
+.about__container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+}
+
+.about__title {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    font-size: 1.25em;
+    color: #ab804f;
+    text-align: center;
+}
+
+.footer__container {
+    background-color: #2f1108;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5%;
+    border-top: 2px solid #ab804f;
+}
+
+.footer__link {
+    background-color: #2f1108;
+    font-size: 0.8em;
+}
+
+.footer__link:hover {
+    color: #ab804f;
+    transition: all 0.3s;
+}
+
+.footer__copyright {
+    background-color: #2f1108;
+    font-size: 0.8em;
+}
+
+@media (min-width: 480px) {
+    .header__title {
+        font-size: 1.4em;
+    }
+
+    .header__link {
+        font-size: 1.2em;
+    }
+
+    .intro__container {
+        width: 90%;
+    }
+
+    .intro__blurb {
+        width: 90%;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    #igraph {
+        width: 90%;
+    }
+
+    .about__title {
+        width: 60%;
+        font-size: 1.4em;
+    }
+
+    .search__input {
+        width: 60%;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .search__button {
+        width: 25%;
+        height: 40px;
+        font-size: 1.25em;
+    }
+
+    .footer__link, .footer__copyright {
+        font-size: 1.1em;
+    }
+
+    .intro__close {
+        font-size: 1.5em;
+        width: 25%;
+    }
+}
+
+@media (min-width: 767px) {
+
+    .header__logo {
+        height: 60px;
+        width: 90px;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+    }
+
+    .header__link {
+        font-size: 1.25em;
+    }
+
+    .intro__container {
+        width: 90%;
+    }
+
+    .intro__blurb {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto 20px auto;
+        font-size: 1.3em;
+    }
+
+    .intro__close {
+        font-size: 1.75em;
+        width: 33%;
+    }
+
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 50%;
+        font-size: 1.5em;
+    }
+
+    .search__input {
+        width: 50%;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .search__button {
+        width: 25%;
+        height: 40px;
+        font-size: 1.25em;
+    }
+
+    .footer__link, .footer__copyright {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 980px) {
+
+    .header__logo {
+        height: 60px;
+        width: 90px;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+    }
+
+    .header__link {
+        font-size: 1.25em;
+    }
+
+    .intro__container {
+        width: 90%;
+    }
+
+    .intro__blurb {
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    .intro__close {
+        font-size: 1.75em;
+        width: 33%;
+    }
+
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 40%;
+        font-size: 1.5em;
+    }
+
+
+    .search__input {
+        width: 50%;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .search__button {
+        width: 25%;
+        height: 40px;
+        font-size: 1.25em;
+    }
+
+    .search__result {
+        width: 500px;
+    }
+
+    .brew__name {
+        font-size: 1.5em;
+    }
+
+    .brew__address, .brew__phone, .brew__url {
+        font-size: 1.25em;
+    }
+
+    .footer__link, .footer__copyright {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header__logo {
+        height: 60px;
+        width: 90px;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+    }
+
+    .header__link {
+        font-size: 1.25em;
+        margin: auto 30px auto 30px;
+    }
+
+    .intro__container {
+        width: 90%;
+    }
+
+    .intro__blurb {
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+    .intro__close {
+        font-size: 1.75em;
+        width: 20%;
+    }
+
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 40%;
+        font-size: 1.6em;
+    }
+
+    .search__input {
+        width: 35%;
+        height: 40px;
+        font-size: 1.2em;
+    }
+
+    .search__button {
+        width: 20%;
+        height: 40px;
+        font-size: 1.25em;
+    }
+
+    .search__result {
+        width: 500px;
+    }
+
+    .brew__name {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .brew__address, .brew__phone, .brew__url {
+        font-size: 1.25em;
+        padding: 10px;
+    }
+
+    .footer__link, .footer__copyright {
+        font-size: 1.2em;
+    }
+}
