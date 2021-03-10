@@ -108,7 +108,7 @@ html {
 }
 
 .brew_map__container {
-    margin: 30px 0 30px 0;
+    margin: 30px auto 30px auto;
     width: 90%;
 }
 
