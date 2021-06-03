@@ -12,7 +12,7 @@ beer_json_data = requests.get(base_url).json()
 # Create Dictionary to house USA Breweries data
 
 usa_brew = {
-    'id': [],
+    'obdb_id': [],
     'name': [],
     "brewery_type": [],
     "street": [],
@@ -28,7 +28,7 @@ usa_brew = {
 # Create a dictionary to house the breweries who don't have lats/longs
 
 usa_brew_no_geo = {
-    'id': [],
+    'obdb_id': [],
     'name': [],
     "brewery_type": [],
     "street": [],
@@ -43,7 +43,7 @@ usa_brew_no_geo = {
 
 # Create list of keys that I want to extract data for
 
-keys = ['id', 'name', 'brewery_type', 'street', 'city', 'state', 
+keys = ['obdb_id', 'name', 'brewery_type', 'street', 'city', 'state', 
         'postal_code', 'longitude', 'latitude', 'phone', 'website_url']
 
 # Extract data from json and add it to dictionary
